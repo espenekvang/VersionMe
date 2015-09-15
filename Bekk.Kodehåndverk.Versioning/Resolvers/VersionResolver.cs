@@ -10,7 +10,7 @@ namespace Bekk.Kodehåndverk.Versioning.Resolvers
 {
     public class VersionResolver
     {
-        private const int LatestApiVersion = 1;
+        private const int LatestApiVersion = 2;
 
         public int ResolveFrom(HttpRequestMessage request)
         {
