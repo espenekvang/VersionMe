@@ -2,7 +2,7 @@
 
 namespace Bekk.Kodehåndverk.Versioning.Controllers
 {
-    public class MembersController : BaseApiController
+    public class MembersV1Controller : BaseApiController
     {
         public IHttpActionResult Get()
         {
