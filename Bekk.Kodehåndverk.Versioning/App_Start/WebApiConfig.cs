@@ -43,8 +43,8 @@ namespace Bekk.Kodehåndverk.Versioning
         private static void CreateXmlMediaTypes(MediaTypeFormatter xmlFormatter)
         {
             var mediaTypes = new List<string> {
-                "application/vnd.pas.sas.v1+xml",
-                "application/vnd.pas.sas.v2+xml"
+                "application/vnd.bekk.v1+xml",
+                "application/vnd.bekk.v2+xml"
             };
             CreateMediaTypes(xmlFormatter, mediaTypes);
         }
@@ -52,8 +52,8 @@ namespace Bekk.Kodehåndverk.Versioning
         private static void CreateJsonMediaTypes(MediaTypeFormatter jsonFormatter)
         {
             var mediaTypes = new List<string> {
-                "application/vnd.pas.sas.v1+json",
-                "application/vnd.pas.sas.v2+json"
+                "application/vnd.bekk.v1+json",
+                "application/vnd.bekk.v2+json"
             };
 
             CreateMediaTypes(jsonFormatter, mediaTypes);
