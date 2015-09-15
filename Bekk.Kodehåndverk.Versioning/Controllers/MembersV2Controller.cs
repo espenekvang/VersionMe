@@ -1,5 +1,4 @@
 ﻿using System.Web.Http;
-using Bekk.Kodehåndverk.Versioning.Models.V2;
 
 namespace Bekk.Kodehåndverk.Versioning.Controllers
 {
@@ -8,7 +7,7 @@ namespace Bekk.Kodehåndverk.Versioning.Controllers
         [HttpGet]
         public IHttpActionResult Get(int id)
         {
-            return Ok(new MemberModelV2 { FirstName = "First", LastName = "Last"});
+            return Ok(MemberRepository.GetV2(id));
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Bekk.Kodehåndverk.Versioning.Controllers
         [HttpGet]
         public IHttpActionResult Get(int id)
         {
-            return Ok(new MemberModel {FirstName = "FirstV1"});
+            return Ok(MemberRepository.Get(id));
         }
     }
 }
