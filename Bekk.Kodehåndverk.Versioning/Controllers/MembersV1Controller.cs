@@ -1,12 +1,14 @@
 ﻿using System.Web.Http;
+using Bekk.Kodehåndverk.Versioning.Models.V1;
 
 namespace Bekk.Kodehåndverk.Versioning.Controllers
 {
     public class MembersV1Controller : BaseApiController
     {
-        public IHttpActionResult Get()
+        [HttpGet]
+        public IHttpActionResult Get(int id)
         {
-            return Ok(new { Name= "A version 1 member"});
+            return Ok(new MemberModel {FirstName = "FirstV1"});
         }
     }
 }
